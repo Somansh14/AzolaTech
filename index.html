@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azola Tech Solutions Pvt Ltd - Professional Travel Services</title>
+    <title>Azola Tech Solutions Pvt Ltd - Premium Travel Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
-        <a href="#home" class="logo"
-          ><img src="Logo.png" alt="Azola Tech Solutions Pvt Ltd Logo"
-        /></a>
+        <a href="#home" class="logo">
+          <img src="Logo.png" alt="Azola Tech Solutions Pvt Ltd Logo" />
+        </a>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -27,8 +35,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-contact">
-          <a href="mailto:info@azolatechsolutions.in" class="email"
-            >info@azolatechsolutions.in</a
+          <a href="mailto:info@azolatechsolutions.in" class="email btn-glass"
+            >Email Us</a
           >
         </div>
         <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
@@ -41,104 +49,92 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>Trusted Travel & Visa Services Since 2018</h1>
-        <p>
-          Azola Tech Solutions Pvt Ltd is a professionally managed travel
-          company offering reliable flight bookings, visa assistance, and
-          domestic and international travel solutions.
+        <h1 class="fade-up stagger-1">Elevate Your Travel <br/><span class="text-gradient">Experience</span></h1>
+        <p class="fade-up stagger-2">
+          Azola Tech Solutions Pvt Ltd is your premium partner for flawless flight bookings, expert visa assistance, and bespoke travel solutions worldwide.
         </p>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <div class="cta-buttons fade-up stagger-3">
+          <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+          <a href="#about" class="btn btn-secondary">Discover More</a>
         </div>
+      </div>
+      <div class="scroll-indicator fade-up stagger-4">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Scroll down</p>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title fade-in">About Us</h2>
-        <p class="section-subtitle fade-in">
-          Your Trusted Partner in Professional Travel Services
-        </p>
+        <div class="section-header fade-up">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-subtitle">Your Trusted Partner in Professional Travel Services</p>
+        </div>
         <div class="about-content">
-          <div class="about-text fade-in">
+          <div class="about-text glass-card fade-right">
+            <h3 class="highlight-text">Founded in 2018</h3>
             <p>
-              Founded in 2018, Azola Tech Solutions Pvt Ltd has been providing
-              dependable travel and visa services to individuals, families, and
-              corporate clients. With a strong focus on transparency, accuracy,
-              and customer satisfaction, we have built long-standing
-              relationships based on trust and service quality.
+              Azola Tech Solutions Pvt Ltd provides dependable travel and visa services to individuals, families, and corporate clients. With a strong focus on transparency, accuracy, and absolute customer satisfaction.
             </p>
             <p>
-              Our experienced team understands the complexities of modern travel
-              and works diligently to ensure every journey is seamless. We pride
-              ourselves on delivering personalized solutions that meet the
-              unique needs of each client.
+              Our experienced team navigates the complexities of modern travel diligently, ensuring every journey is seamless and personalized to your unique needs.
             </p>
             <ul class="services-list">
               <li>Flight Bookings (Domestic & International)</li>
-              <li>Visa Assistance & Documentation</li>
-              <li>Domestic Travel Packages</li>
-              <li>International Travel Solutions</li>
+              <li>Comprehensive Visa Assistance</li>
+              <li>Curated Domestic Travel Packages</li>
+              <li>Bespoke International Escapes</li>
             </ul>
           </div>
-          <div class="about-image fade-in"></div>
+          <div class="about-image glass-card fade-left">
+            <div class="image-inner"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Vision & Mission Section -->
-    <section id="vision">
-      <div class="vision-container">
-        <div class="vision-intro">
-          <h2 class="section-title fade-in">Our Vision & Mission</h2>
-          <p class="vision-description fade-in">
-            At Azola Tech Solutions, we don't just plan trips—we craft
-            extraordinary experiences that transform how people explore the
-            world.
-          </p>
+    <section id="vision" class="section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Our Vision & Mission</h2>
+          <p class="section-subtitle">Crafting extraordinary experiences that transform exploration</p>
         </div>
 
-        <div class="vision-content">
-          <div class="vision-item fade-in">
-            <!-- <div class="vision-icon"></div> -->
-            <div class="vision-text">
-              <h3>Our Vision</h3>
-              <p>
-                To revolutionize travel by becoming India's leading
-                technology-driven travel solutions provider, where every journey
-                is personalized, seamless, and unforgettable—connecting dreams
-                with destinations through innovation and trust.
-              </p>
-            </div>
+        <div class="vision-grid">
+          <div class="vision-card glass-card fade-up stagger-1">
+            <div class="card-icon">🚀</div>
+            <h3>Our Vision</h3>
+            <p>
+              To revolutionize travel by becoming India's leading technology-driven solutions provider, where every journey is personalized, seamless, and unforgettable.
+            </p>
           </div>
 
-          <div class="vision-item fade-in">
-            <!-- <div class="vision-icon"></div> -->
-            <div class="vision-text">
-              <h3>Our Mission</h3>
-              <p>
-                To empower every traveler with cutting-edge travel technology,
-                expert guidance, and unwavering support. We transform complex
-                travel processes into simple, joyful experiences—ensuring peace
-                of mind from booking to boarding.
-              </p>
-            </div>
+          <div class="vision-card glass-card fade-up stagger-2">
+            <div class="card-icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>
+              To empower travelers with cutting-edge technology, expert guidance, and unwavering support, ensuring absolute peace of mind from booking to boarding.
+            </p>
           </div>
         </div>
 
-        <div class="vision-stats">
+        <div class="stats-container glass-card fade-up stagger-3">
           <div class="stat-item">
-            <div class="stat-number">8+</div>
+            <div class="stat-number text-gradient" data-target="8">0</div>
             <div class="stat-label">Years of Excellence</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">5000+</div>
+            <div class="stat-number text-gradient" data-target="5000">0</div>
             <div class="stat-label">Happy Travelers</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">24/7</div>
+            <div class="stat-number text-gradient">24/7</div>
             <div class="stat-label">Support Available</div>
           </div>
         </div>
@@ -146,184 +142,154 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team">
+    <section id="team" class="section">
       <div class="container">
-        <h2 class="section-title fade-in">Our Team</h2>
-        <p class="section-subtitle fade-in">
-          Meet the professionals behind our service excellence
-        </p>
+        <div class="section-header fade-up">
+          <h2 class="section-title">Leadership & Team</h2>
+          <p class="section-subtitle">The experts behind our service excellence</p>
+        </div>
+        
         <div class="team-grid">
           <!-- Managing Directors -->
-          <div class="team-member fade-in">
+          <div class="team-card glass-card fade-up stagger-1">
+            <div class="team-avatar">RB</div>
             <h3>Mrs. Rajni Bala</h3>
-            <p>Managing Director</p>
+            <p class="team-role">Managing Director</p>
           </div>
-          <div class="team-member fade-in">
+          <div class="team-card glass-card fade-up stagger-2">
+            <div class="team-avatar">MM</div>
             <h3>Mr. Manish Munjal</h3>
-            <p>Managing Director</p>
+            <p class="team-role">Managing Director</p>
           </div>
-          
           
           <!-- Associate Directors -->
-          <div class="team-member fade-in">
+          <div class="team-card glass-card fade-up stagger-3">
+            <div class="team-avatar">RB</div>
             <h3>Mr. Ravinder Singh Bisht</h3>
-            <p>Associate Director</p>
+            <p class="team-role">Associate Director</p>
           </div>
-          <div class="team-member fade-in">
+          <div class="team-card glass-card fade-up stagger-4">
+            <div class="team-avatar">K</div>
             <h3>Mrs. Kanika</h3>
-            <p>Associate Director</p>
+            <p class="team-role">Associate Director</p>
           </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Vijay Kumar</h3>
-            <p>Sales Head</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Ms. Jaspreet Kaur</h3>
-            <p>Senior Data Analyst</p>
-          </div>
-          
-          <!-- Operations Leadership -->
-          <div class="team-member fade-in">
-            <h3>Mr. Anuj Kumar</h3>
-            <p>HOD-Operations</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Lovepreet Singh</h3>
-            <p>Operations Manager</p>
-          </div>
+        </div>
 
-          <!-- Marketing & HR -->
-          <div class="team-member fade-in">
-            <h3>Mr. Harsh Dhiman</h3>
-            <p>Senior Marketing Manager</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mrs. Urvashi</h3>
-            <p>HR Head</p>
-          </div>
-
-          <!-- Technical & Analytics -->
-          <div class="team-member fade-in">
-            <h3>Mr. Vijay Kumar</h3>
-            <p>IT Supervisor</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Shubham</h3>
-            <p>Business Analyst</p>
-          </div>
-
-          <!-- Additional Team Members -->
-          <div class="team-member fade-in">
-            <h3>Ms. Priya Sharma</h3>
-            <p>Customer Service Manager</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Rohan Gupta</h3>
-            <p>Visa Processing Specialist</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mrs. Meera Singh</h3>
-            <p>Travel Consultant</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Arjun Patel</h3>
-            <p>Senior Sales Executive</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mrs. Aisha Khan</h3>
-            <p>Finance Manager</p>
-          </div>
-          <div class="team-member fade-in">
-            <h3>Mr. Karan Verma</h3>
-            <p>Content Marketing Specialist</p>
+        <!-- Scrollable list for rest of team to save space -->
+        <div class="team-roster glass-card fade-up">
+          <h3>Our Extended Team</h3>
+          <div class="roster-grid">
+            <div class="roster-item"><strong>Mr. Vijay Kumar</strong> <span>Sales Head / IT Supervisor</span></div>
+            <div class="roster-item"><strong>Ms. Jaspreet Kaur</strong> <span>Senior Data Analyst</span></div>
+            <div class="roster-item"><strong>Mr. Anuj Kumar</strong> <span>HOD-Operations</span></div>
+            <div class="roster-item"><strong>Mr. Lovepreet Singh</strong> <span>Operations Manager</span></div>
+            <div class="roster-item"><strong>Mr. Harsh Dhiman</strong> <span>Sr. Marketing Manager</span></div>
+            <div class="roster-item"><strong>Mrs. Urvashi</strong> <span>HR Head</span></div>
+            <div class="roster-item"><strong>Mr. Shubham</strong> <span>Business Analyst</span></div>
+            <div class="roster-item"><strong>Ms. Priya Sharma</strong> <span>Customer Service Manager</span></div>
+            <div class="roster-item"><strong>Mr. Rohan Gupta</strong> <span>Visa Processing Specialist</span></div>
+            <div class="roster-item"><strong>Mrs. Meera Singh</strong> <span>Travel Consultant</span></div>
+            <div class="roster-item"><strong>Mr. Arjun Patel</strong> <span>Sr. Sales Executive</span></div>
+            <div class="roster-item"><strong>Mrs. Aisha Khan</strong> <span>Finance Manager</span></div>
+            <div class="roster-item"><strong>Mr. Karan Verma</strong> <span>Content Marketing Specialist</span></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-subtitle">
-          We're here to assist you with all your travel needs
-        </p>
-        <div class="contact-container">
-          <div class="contact-info fade-in">
-            <div class="contact-item">
-              <div class="contact-item-icon">📍</div>
-              <div class="contact-item-text">
-                <h4>Our Location</h4>
-                <p>Karnal, Haryana, India</p>
+        <div class="section-header fade-up">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Let's craft your next extraordinary journey</p>
+        </div>
+        
+        <div class="contact-layout">
+          <div class="contact-details glass-card fade-right">
+            <h3>Contact Information</h3>
+            <p class="contact-desc">Reach out to us directly or fill out the form, and we'll respond promptly.</p>
+            
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="icon-circle">📍</div>
+                <div>
+                  <h4>Headquarters</h4>
+                  <p>Karnal, Haryana, India</p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">📞</div>
-              <div class="contact-item-text">
-                <h4>Phone Numbers</h4>
-                <p>
-                  <a
-                    href="tel:+919788530000"
-                    style="color: white; text-decoration: none"
-                    >+91 97885 30000</a
-                  ><br />
-                  <a
-                    href="tel:+918168900389"
-                    style="color: white; text-decoration: none"
-                    >+91 81689 00389</a
-                  >
-                </p>
+              <div class="contact-item">
+                <div class="icon-circle">📞</div>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+919788530000">+91 97885 30000</a></p>
+                  <p><a href="tel:+918168900389">+91 81689 00389</a></p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">✉️</div>
-              <div class="contact-item-text">
-                <h4>Email Address</h4>
-                <p>
-                  <a
-                    href="mailto:info@azolatechsolutions.in"
-                    style="color: white; text-decoration: none"
-                    >info@azolatechsolutions.in</a
-                  >
-                </p>
+              <div class="contact-item">
+                <div class="icon-circle">✉️</div>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:info@azolatechsolutions.in">info@azolatechsolutions.in</a></p>
+                </div>
               </div>
             </div>
           </div>
-          <form
-            class="contact-form fade-in"
-            id="contactForm"
-            action="https://formspree.io/f/xnjnkyly"
-            method="POST"
-          >
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message</button>
-          </form>
+
+          <div class="contact-form-wrapper glass-card fade-left">
+            <form id="contactForm" action="https://formspree.io/f/xnjnkyly" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="How can we help you plan your travel?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <div class="btn-shine"></div>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-content">
-        <p>© 2018 Azola Tech Solutions Pvt Ltd. All rights reserved.</p>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="Logo.png" alt="Azola Tech" class="footer-logo">
+            <p>Your trusted partner in professional travel services since 2018.</p>
+          </div>
+          <div class="footer-links-group">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#vision">Vision & Mission</a></li>
+              <li><a href="#team">Our Team</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h4>Services</h4>
+            <ul>
+              <li>Flight Bookings</li>
+              <li>Visa Assistance</li>
+              <li>Domestic Travel</li>
+              <li>International Travel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2018-2026 Azola Tech Solutions Pvt Ltd. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
