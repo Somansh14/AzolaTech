@@ -913,3 +913,265 @@ footer {
   .footer-top { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
   .footer-brand p { margin: 0 auto; }
 }
+
+/* ==========================================================================
+   Destination Pages Styles
+   ========================================================================== */
+.destination-hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.destination-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+  z-index: 1;
+}
+
+.destination-hero p {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#aus-hero .hero-overlay {
+  background: radial-gradient(circle at center, transparent 0%, var(--bg-primary) 100%),
+              url("assets/aus_hero.png") center/cover;
+}
+
+#nz-hero .hero-overlay {
+  background: radial-gradient(circle at center, transparent 0%, var(--bg-primary) 100%),
+              url("assets/nz_hero.png") center/cover;
+}
+
+#eu-hero .hero-overlay {
+  background: radial-gradient(circle at center, transparent 0%, var(--bg-primary) 100%),
+              url("assets/eu_hero.png") center/cover;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.activity-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.activity-card:hover .activity-image img {
+  transform: scale(1.1);
+}
+
+.activity-content {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.activity-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Featured Destinations on Home Page */
+.destinations-section {
+  padding: 6rem 0;
+}
+
+.dest-card {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  height: 400px;
+  cursor: pointer;
+}
+
+.dest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.dest-card:hover img {
+  transform: scale(1.05);
+}
+
+.dest-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(10,10,15,0.9) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+  transition: var(--transition-fast);
+}
+
+.dest-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(20px);
+  transition: transform var(--transition-fast);
+}
+
+.dest-card p {
+  color: var(--text-secondary);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-fast);
+}
+
+.dest-card:hover h3 {
+  transform: translateY(0);
+}
+
+.dest-card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Detailed Content Sections (Itinerary & Info)
+   ========================================================================== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  padding: 2.5rem;
+  border-left: 4px solid var(--accent-primary);
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+}
+
+.info-card ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.info-card ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.info-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: var(--bg-primary);
+  border: 4px solid var(--accent-primary);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  left: 21px;
+}
+
+.timeline-content {
+  padding: 2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-md);
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
